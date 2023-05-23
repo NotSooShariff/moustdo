@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#new-todo,
+#search-bar {
+  flex: 1;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-button,
+#add-todo {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: var(--app-bg-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+#search-button:hover,
+#add-todo:hover {
+  background-color: #ccc;
+}
+
+#search-bar:focus,
+#new-todo:focus {
+  color: #3030;
+}
+
+#search-bar::placeholder,
+#new-todo::placeholder {
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 480px) {
+  /* Other CSS rules for smaller screens */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  #new-todo {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  [data-theme="light"] {
+    --bg-color: #fff;
+    --text-color: #303030;
+    --strike-color: #888;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #303030;
+    --text-color: #fff;
+    --strike-color: #bbb;
+  }
+  
+  #app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--app-bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  #main {
+    margin-top: 20px;
+  }
+  
+  #search-container,#new-todo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #search-bar,
+  #new-todo {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  #search-bar:focus,
+  #new-todo:focus {
+    background-color: white;
+  }
+  
+  #search-button,
+  #add-todo {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: var(--app-bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-button:hover,
+  #add-todo:hover {
+    background-color: #ccc;
+  }
+  
+  #search-bar::placeholder,
+  #new-todo::placeholder {
+    color: var(--text-color);
+  }
+  
+  #todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+  
+  #todo-list li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #todo-list li.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+    color: var(--strike-color);
+  }
+  
+  #todo-list li button {
+    margin-left: auto;
+  }
+  
+  #weather {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #temperature {
+    font-size: 24px;
+  }
+  
+  #weather-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+  
+  @media screen and (max-width: 480px) {
+    #app {
+      padding: 10px;
+    }
+  
+    #header h1 {
+      font-size: 20px;
+    }
+  
+    #search-bar,
+    #new-todo {
+      font-size: 14px;
+    }
+  
+    #search-button,
+    #add-todo {
+      font-size: 14px;
+    }
+  
+    #todo-list li {
+      padding: 5px;
+    }
+  
+    #weather {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #temperature {
+      font-size: 18px;
+    }
+  
+    #weather-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

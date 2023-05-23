@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Mous-t-Do",
+    "version": "1.0.0",
+    "description": "A productivity-focused new tab extension",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "permissions": [
+      "scripting",
+      "storage",
+      "activeTab",
+      "declarativeContent"
+    ],
+    "host_permissions": [
+      "https://api.quotable.io/"
+    ],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "background": {
+      "service_worker": "script.js"
+    },
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Productive New Tab</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="header">
+      <h1>What do you want to do today?</h1>
+      <label class="switch">
+        <input type="checkbox" id="mode-switch" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div id="main">
+      
+      <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Look for ideas..." autofocus>
+        <button id="search-button">&#x1F50D;</button>
+      </div>
+      
+      <ul id="todo-list">
+        <li>
+          <input type="checkbox">
+          <span>📒 Here are examples of items to add to your checklist</span>
+          <button class="delete-btn">&#x2715;</button>
+        </li>
+        <li>
+          <input type="checkbox">
+          <span>👆 You can click on the delete button to delete it</span>
+          <button class="delete-btn">&#x2715;</button>
+        </li>
+        <li>
+          <input type="checkbox">
+          <span>❌ Or you can hit the checkbox to cross it off</span>
+          <button class="delete-btn">&#x2715;</button>
+        </li>
+      </ul>
+      
+      <div id="new-todo-container">
+        <input type="text" id="new-todo" placeholder="Add a new item">
+        <button id="add-todo" aria-label="Add">&#x2B;</button>
+      </div>
+
+    </div>
+    <div id="weather">
+      <div id="temperature"></div>
+      <div id="weather-icon"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
