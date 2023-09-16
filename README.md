@@ -36,7 +36,4 @@ Mous-t-Do integrates with the following APIs to provide its functionality:
 
 Contributions to Mous-t-Do are welcome! If you find any issues or have ideas for improvements, feel free to open an issue or submit a pull request. Please follow the existing code style and guidelines.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
