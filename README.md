@@ -1,5 +1,7 @@
 # Mous-t-Do
 
+> ⚠️ Note - It has a pretty uninspiring UI xD. Just coded this to get to know how to do certain things in Manifest V3 better.
+
 Mous-t-Do is a productivity-focused browser extension that enhances the new tab experience by providing a to-do list, weather display, and motivational quotes. It is built using Manifest V3
 
 ## Features
